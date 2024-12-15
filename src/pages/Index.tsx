@@ -6,11 +6,31 @@ import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 
 const platforms = [
-  { name: "Framer", icon: "framer" },
-  { name: "Bubble.io", icon: "bubble" },
-  { name: "Shopify", icon: "shopping-bag" },
-  { name: "V0", icon: "code" },
-  { name: "Bolt", icon: "zap" },
+  { 
+    name: "Framer", 
+    icon: "framer",
+    logo: "https://framerusercontent.com/images/48ha9ZR9oZQGQ6gZ8YUfElP3T0.png"
+  },
+  { 
+    name: "Bubble.io", 
+    icon: "bubble",
+    logo: "https://assets-global.website-files.com/6334198f239547d0f9cd84b3/63349803431f1562dccf1634_bubble-logo.svg"
+  },
+  { 
+    name: "Shopify", 
+    icon: "shopping-bag",
+    logo: "https://cdn.worldvectorlogo.com/logos/shopify.svg"
+  },
+  { 
+    name: "V0", 
+    icon: "code",
+    logo: "https://v0.dev/favicon.svg"
+  },
+  { 
+    name: "Bolt", 
+    icon: "zap",
+    logo: "https://bolt.com/static/bolt-logo-white.svg"
+  },
 ];
 
 const products = [
@@ -84,9 +104,14 @@ const Index = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
-              className="glass glass-hover p-6 rounded-xl text-center"
+              className="glass glass-hover p-6 rounded-xl text-center flex items-center justify-center"
             >
-              <div className="text-2xl mb-3">{platform.name}</div>
+              <img 
+                src={platform.logo} 
+                alt={platform.name} 
+                className="h-12 w-auto object-contain filter brightness-0 invert hover:brightness-100 transition-all duration-300"
+                title={platform.name}
+              />
             </motion.div>
           ))}
         </div>
