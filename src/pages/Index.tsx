@@ -9,27 +9,27 @@ const platforms = [
   { 
     name: "Framer", 
     icon: "framer",
-    logo: "https://framerusercontent.com/images/48ha9ZR9oZQGQ6gZ8YUfElP3T0.png"
+    logo: "/lovable-uploads/7407e0c4-d627-4dcd-9e8e-c357a3c987d4.png"
   },
   { 
     name: "Bubble.io", 
     icon: "bubble",
-    logo: "https://assets-global.website-files.com/6334198f239547d0f9cd84b3/63349803431f1562dccf1634_bubble-logo.svg"
+    logo: "/lovable-uploads/5e459309-a7d0-44fb-ad17-f35aa5c3012f.png"
   },
   { 
     name: "Shopify", 
     icon: "shopping-bag",
-    logo: "https://cdn.worldvectorlogo.com/logos/shopify.svg"
+    logo: "/lovable-uploads/3dd62c90-a12b-4007-8e3c-bd2bead7e2eb.png"
   },
   { 
     name: "V0", 
     icon: "code",
-    logo: "https://v0.dev/favicon.svg"
+    logo: "/lovable-uploads/bb6c7dec-9833-4308-bddd-69e062adc666.png"
   },
   { 
     name: "Bolt", 
     icon: "zap",
-    logo: "https://bolt.com/static/bolt-logo-white.svg"
+    logo: "/lovable-uploads/eaefcd9b-6477-4fe1-a7db-0e4ff448e520.png"
   },
 ];
 
