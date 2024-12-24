@@ -11,6 +11,26 @@ const steps = [
       { name: "V0", logo: "/lovable-uploads/bb6c7dec-9833-4308-bddd-69e062adc666.png" },
       { name: "Bubble", logo: "/lovable-uploads/5e459309-a7d0-44fb-ad17-f35aa5c3012f.png" },
     ]
+  },
+  {
+    number: 2,
+    title: "Find Your Template",
+    description: "Browse our collection of templates designed specifically for your chosen platform.",
+  },
+  {
+    number: 3,
+    title: "Choose Your Version",
+    description: "Select between lite and premium versions based on the features you need for your project.",
+  },
+  {
+    number: 4,
+    title: "Purchase & Remix",
+    description: "Get instant access to your template and start customizing it for your needs.",
+  },
+  {
+    number: 5,
+    title: "Build or Launch",
+    description: "Continue building on top of our foundation or launch straight away - the choice is yours.",
   }
 ];
 
@@ -41,21 +61,23 @@ const HowItWorksSection = () => {
               <h3 className="text-xl font-semibold mb-4">{step.title}</h3>
               <p className="text-muted-foreground mb-6">{step.description}</p>
               
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-                {step.platforms.map((platform) => (
-                  <div
-                    key={platform.name}
-                    className="glass-hover p-4 rounded-lg flex items-center justify-center"
-                  >
-                    <img
-                      src={platform.logo}
-                      alt={platform.name}
-                      className="h-8 w-auto object-contain filter brightness-0 invert hover:brightness-100 transition-all duration-300"
-                      title={platform.name}
-                    />
-                  </div>
-                ))}
-              </div>
+              {step.platforms && (
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                  {step.platforms.map((platform) => (
+                    <div
+                      key={platform.name}
+                      className="glass-hover p-4 rounded-lg flex items-center justify-center"
+                    >
+                      <img
+                        src={platform.logo}
+                        alt={platform.name}
+                        className="h-8 w-auto object-contain filter brightness-0 invert hover:brightness-100 transition-all duration-300"
+                        title={platform.name}
+                      />
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
           </motion.div>
         ))}
