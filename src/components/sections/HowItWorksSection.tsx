@@ -6,10 +6,10 @@ const steps = [
     title: "Find Your Tool",
     description: "Whether you're building in Lovable, Bolt, Replit Agents, V0, or Bubble, we got something for you.",
     platforms: [
-      { name: "Lovable", logo: "/lovable-uploads/7407e0c4-d627-4dcd-9e8e-c357a3c987d4.png" },
-      { name: "Bolt", logo: "/lovable-uploads/eaefcd9b-6477-4fe1-a7db-0e4ff448e520.png" },
-      { name: "V0", logo: "/lovable-uploads/bb6c7dec-9833-4308-bddd-69e062adc666.png" },
-      { name: "Bubble", logo: "/lovable-uploads/5e459309-a7d0-44fb-ad17-f35aa5c3012f.png" },
+      { name: "Lovable", logo: "lovable-uploads/7407e0c4-d627-4dcd-9e8e-c357a3c987d4.png" },
+      { name: "Bolt", logo: "lovable-uploads/eaefcd9b-6477-4fe1-a7db-0e4ff448e520.png" },
+      { name: "V0", logo: "lovable-uploads/bb6c7dec-9833-4308-bddd-69e062adc666.png" },
+      { name: "Bubble", logo: "lovable-uploads/5e459309-a7d0-44fb-ad17-f35aa5c3012f.png" },
     ]
   },
   {
